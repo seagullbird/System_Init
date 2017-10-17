@@ -16,9 +16,19 @@ function InstallSublime3()
 
 function InstallOhMyZsh()
 {
-    sudo apt install -y zsh git
+    sudo apt install -y zsh
     chsh -s $(which zsh)
     sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+}
+
+function InstallGit()
+{
+    sudo apt install -y git
+    git config --global alias.ch checkout
+    git config --global alias.br branch
+    git config --global alias.cm commit
+    git config --global alias.st status
+    git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 }
 
 function InstallAll()
