@@ -83,9 +83,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PATH=~/bin:$PATH
-export CLASSPATH=$CLASSPATH:~/libjava/sikuli-script.jar
-export CLASSPATH=$CLASSPATH:~/libjava/mysql-connector-java-5.1.27-bin.jar
-# Added by selenium_setup_linux.sh.
-export CLASSPATH=$CLASSPATH:~/libjava/selenium/*
