@@ -14,4 +14,5 @@ rm -rf fonts
 # zshrc
 cp .zshrc ${HOME}
 cd ${HOME}
+echo "alias git=hub" >> .zshrc
 source .zshrc
