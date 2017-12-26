@@ -31,6 +31,13 @@ function InstallGit()
     git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 }
 
+function InstallHub()
+{
+    cd
+    git clone https://github.com/github/hub.git && cd hub
+    script/build -o ~/bin/hub
+}
+
 function InstallAll()
 {
     InstallGit
