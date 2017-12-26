@@ -35,7 +35,7 @@ function InstallHub()
 {
     cd
     git clone https://github.com/github/hub.git && cd hub
-    script/build -o ~/bin/hub
+    script/build -o /usr/bin/hub
 }
 
 function InstallAll()
