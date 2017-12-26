@@ -41,6 +41,7 @@ function InstallHub()
 function InstallAll()
 {
     InstallGit
+    InstallHub
     InstallTerminator
     InstallSublime3
     InstallOhMyZsh
